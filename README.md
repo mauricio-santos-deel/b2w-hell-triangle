@@ -2,7 +2,7 @@
 This is a job application challenge. This project will build an Express.js HTTP Server that responds an HTTP POST request resolving the hell triangle challenge.
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 In order to build this project from the source code, you will need Node.js (version 6.11.1 or higher) installed.
