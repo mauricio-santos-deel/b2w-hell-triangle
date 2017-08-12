@@ -1,6 +1,27 @@
 /* global exports */
 
 /**
+ * Variable that will store the already calculated paths.
+ */
+const cachedPaths = {};
+cachedPaths.height3 = [
+	[0,0,0],
+	[0,0,1],
+	[0,1,1],
+	[0,1,2],
+];
+cachedPaths.height4 = [
+	[0,0,0,0],
+	[0,0,0,1],
+	[0,0,1,1],
+	[0,0,1,2],
+	[0,1,1,1],
+	[0,1,1,2],
+	[0,1,2,2],
+	[0,1,2,3]
+];
+
+/**
  * function that will be called by the route layer
  * @param  {Object} req The HTTP Request
  * @param  {Object} res The HTTP Response
@@ -21,8 +42,15 @@ exports.calculateResult = function(req, res) {
  */
 function getResult(triangleArray) {
 
+	var combos;
+
 	// generate all possible path combinations in the given hell triangle
-	const combos = genCombinations(triangleArray);
+	if (cachedPaths['height' + triangleArray.length]) {
+		combos = cachedPaths['height' + triangleArray.length];
+	} else {
+		combos = genCombinations(triangleArray);
+		cachedPaths['height' + triangleArray.length] = combos.slice();
+	}
 
 	// initialize variables that will store the result
 	var greaterCombos = [];
@@ -127,3 +155,4 @@ exports.getResult = getResult;
 exports.genCombinations = genCombinations;
 exports.getNextCombination = getNextCombination;
 exports.getComboSum = getComboSum;
+exports.cachedPaths = cachedPaths;

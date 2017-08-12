@@ -1,7 +1,7 @@
 var assert = require('assert');
 var controller = require('../../src/server/controller');
 
-describe('Next combination calculator', () => {
+describe('Next Combination Paths Calculator', () => {
 	
 	it('Triangle with 2 levels, previous combination: [0,0]', (done) => {
 		const combination = [0,0];
