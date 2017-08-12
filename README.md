@@ -1,18 +1,28 @@
 # Hell Triangle
-<h2>Goal</h2>
-<p>This is a job application challenge.</p>
-<p>This project will build an Express.js HTTP Server that responds an HTTP POST request resolving the hell triangle challenge.</p>
+This is a job application challenge. This project will build an Express.js HTTP Server that responds an HTTP POST request resolving the hell triangle challenge.
 
-<h2>Getting started</h2>
-<p>In order to build this project from the source code, you will need Node.js (version 6.11.1 or higher) installed.</p>
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-<h2>Running the app</h2>
-<p>After cloning this git repository, in your terminal, go to the project path and then, run the command bellow. This will install all node modules necessary.</p>
-<code>npm i</code>
+### Prerequisites
+In order to build this project from the source code, you will need Node.js (version 6.11.1 or higher) installed.
 
-<h2>Starting the app</h2>
-<p>In your terminal run the command bellow to start the Express Server, and serve the service that will calculate the result for Hell Triangle Challenge</p>
-<code>npm run start</code>
+### Running the app
+
+Fisrt of all let's clone this git repository.
+...
+git clone https://github.com/msantos-sw/b2w-hell-triangle.git
+...
+
+Now, in your terminal, go to the project path and then, run the command bellow. This will install all node modules necessary.
+...
+npm i
+...
+
+The app source code is cloned and the dependencies have been installed. Let's start this server! In your terminal run the command bellow.
+...
+npm run start
+...
 
 <h2>Consuming the hell triangle service</h2>
 <p>You can use any Http Client to consume the service after starting the server. I used ARC google chrome extension.</p>
