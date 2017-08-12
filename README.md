@@ -10,19 +10,19 @@ In order to build this project from the source code, you will need Node.js (vers
 ### Running the app
 
 Fisrt of all let's clone this git repository.
-...
+```
 git clone https://github.com/msantos-sw/b2w-hell-triangle.git
-...
+```
 
 Now, in your terminal, go to the project path and then, run the command bellow. This will install all node modules necessary.
-...
+```
 npm i
-...
+```
 
 The app source code is cloned and the dependencies have been installed. Let's start this server! In your terminal run the command bellow.
-...
+```
 npm run start
-...
+```
 
 <h2>Consuming the hell triangle service</h2>
 <p>You can use any Http Client to consume the service after starting the server. I used ARC google chrome extension.</p>
