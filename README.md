@@ -51,6 +51,9 @@ The result expected is a json output, in the format bellow.
 ```
 
 The greaterCombos array will hold the path that represents the greater sum. For example, in the request above, this is the explanation:
+
+![img2](https://user-images.githubusercontent.com/23347207/29243278-559f38da-7f71-11e7-8639-660e97feed65.png)
+
   * 0 points to 6 position inside the first array inside triangleArray.
   * 1 points to 5 position inside the second array inside triangleArray.
   * 1 points to 7 position inside the third array inside triangleArray.
