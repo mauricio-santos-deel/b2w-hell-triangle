@@ -10,24 +10,24 @@ In order to build this project from the source code, you will need Node.js (vers
 ### Running the app
 
 First of all, let's clone this git repository.
-```
-git clone https://github.com/msantos-sw/b2w-hell-triangle.git
+```bash
+$ git clone https://github.com/msantos-sw/b2w-hell-triangle.git
 ```
 
 Now, in your terminal, go to the project path and then, run the command bellow. This will install all node modules necessary.
-```
-npm i
+```bash
+$ npm i
 ```
 
 The app source code is cloned and the dependencies have been installed. Let's start this server! In your terminal run the command bellow.
-```
-npm run start
+```bash
+$ npm run start
 ```
 
 ## Consuming the hell triangle service
 You can use any Http Client to consume the service after starting the server. I used [Advanced REST Client google chrome extension](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo).
 
-To consume the service that will calculate the hell triangle challenge, you must send an HTTP Post Request to the URL http://localhost:3000/api/hell/result. This request must have Content-Type: application/json header. And, finally, in the request payload you must send a json with the format bellow:
+To consume the service that will calculate the hell triangle challenge, you must send an HTTP Post Request to the URL http://localhost:3000/api/hell/result. This request must have `Content-Type: application/json header`. And, finally, in the request payload you must send a json with the format bellow:
 ```
 {
   "triangleArray": [[6],[3,5],[9,7,1],[4,6,8,4]]
