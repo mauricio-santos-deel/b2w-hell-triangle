@@ -38,8 +38,8 @@ Check in ARC:
 
 ![img1](https://user-images.githubusercontent.com/23347207/29242778-6202f038-7f69-11e7-9332-2a6eac87a6e5.png)
 
-<p>The result expected is a json output, in the format bellow.</p>
-<code>
+The result expected is a json output, in the format bellow.
+```
 {
     "result": {
         "greaterCombos": [
@@ -48,17 +48,18 @@ Check in ARC:
         "greaterResult": 26
     }
 }
-</code>
-<p>The greaterCombos array will hold the path that represents the greater sum. For example, in the request above, this is the explanation:</p>
-<li>0 points to 6 position inside the first array inside triangleArray.</li>
-<li>1 points to 5 position inside the second array inside triangleArray.</li>
-<li>1 points to 7 position inside the third array inside triangleArray.</li>
-<li>2 points to 8 position inside the fourth array inside triangleArray.</li>
+```
 
-<h2>The solution</h2>
-<p></p>
+The greaterCombos array will hold the path that represents the greater sum. For example, in the request above, this is the explanation:
+*0 points to 6 position inside the first array inside triangleArray.
+*1 points to 5 position inside the second array inside triangleArray.
+*1 points to 7 position inside the third array inside triangleArray.
+*2 points to 8 position inside the fourth array inside triangleArray.
 
-<h2>Testing the app</h2>
-<p>The unit and integration tests was developed using mocha lib. To run the tests, on your terminal, run the command bellow.</p>
-<p>Before running the command make sure that the app is not running.</p>
-<code>npm run test</code>
+### The solution
+
+## Testing the app
+The unit and integration tests was developed using mocha anc chai lib. To run the tests, on your terminal, run the command bellow, but, before running the command make sure that the app is not running.
+```
+npm run test
+```
