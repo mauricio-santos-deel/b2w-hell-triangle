@@ -2,7 +2,7 @@
 This is a job application challenge. This project will build an Express.js HTTP Server that responds an HTTP POST request resolving the hell triangle challenge.
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 In order to build this project from the source code, you will need Node.js (version 6.11.1 or higher) installed.
@@ -51,6 +51,9 @@ The result expected is a json output, in the format bellow.
 ```
 
 The greaterCombos array will hold the path that represents the greater sum. For example, in the request above, this is the explanation:
+
+![img2](https://user-images.githubusercontent.com/23347207/29243278-559f38da-7f71-11e7-8639-660e97feed65.png)
+
   * 0 points to 6 position inside the first array inside triangleArray.
   * 1 points to 5 position inside the second array inside triangleArray.
   * 1 points to 7 position inside the third array inside triangleArray.
