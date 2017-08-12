@@ -58,11 +58,10 @@ The greaterCombos array will hold the path that represents the greater sum. For 
 
 ### The solution
 The hell triangle algorithm will work in 4 steps:
-  * Check if the triangle path is already cached.
-  * If paths are not cached, genetares all possible paths for that triangle. The paths will be the same for triangles with the same height.
+  * Check if the triangle paths are already cached. The paths will be the same for triangles with the same height.
+  * If paths are not cached, genetares all possible paths for that triangle. 
   * Use the paths to check which one generates the bigger sum.
   * Return the result.
-
 
 ## Testing the app
 The unit and integration tests was developed using mocha anc chai lib. To run the tests, on your terminal, run the command bellow, but, before running the command make sure that the app is not running.
