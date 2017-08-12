@@ -9,7 +9,7 @@ In order to build this project from the source code, you will need Node.js (vers
 
 ### Running the app
 
-Fisrt of all let's clone this git repository.
+First of all, let's clone this git repository.
 ```
 git clone https://github.com/msantos-sw/b2w-hell-triangle.git
 ```
@@ -24,16 +24,20 @@ The app source code is cloned and the dependencies have been installed. Let's st
 npm run start
 ```
 
-<h2>Consuming the hell triangle service</h2>
-<p>You can use any Http Client to consume the service after starting the server. I used ARC google chrome extension.</p>
-<p>To consume the service that will calculate the hell triangle challenge, you must send an HTTP Post Request to the URL http://localhost:3000/api/hell/result.</p>
-<p>This request must have Content-Type: application/json header.</p>
-<p>In the request payload you must send a json with the format bellow:</p>
-<code>
+## Consuming the hell triangle service
+You can use any Http Client to consume the service after starting the server. I used [Advanced REST Client google chrome extension](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo).
+
+To consume the service that will calculate the hell triangle challenge, you must send an HTTP Post Request to the URL http://localhost:3000/api/hell/result. This request must have Content-Type: application/json header. And, finally, in the request payload you must send a json with the format bellow:
+```
 {
   "triangleArray": [[6],[3,5],[9,7,1],[4,6,8,4]]
 }    
-</code>
+```
+
+Check in ARC:
+
+![img1](https://user-images.githubusercontent.com/23347207/29242778-6202f038-7f69-11e7-9332-2a6eac87a6e5.png)
+
 <p>The result expected is a json output, in the format bellow.</p>
 <code>
 {
